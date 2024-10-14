@@ -3,12 +3,12 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace EmirhanPortfolio.ViewComponents
 {
-    public class _FeatureComponentPartial:ViewComponent
+    public class _SkillComponentPartial : ViewComponent
     {
-        MyPortfolioContext portfolioContext = new MyPortfolioContext();
+        MyPortfolioContext context = new MyPortfolioContext();
         public IViewComponentResult Invoke()
         {
-            var values = portfolioContext.Features.ToList();
+            var values = context.Skills.ToList();
             return View(values);
         }
     }
