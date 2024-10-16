@@ -8,6 +8,6 @@
         public string Email { get; set; }
         public string MessageDetail { get; set; }
         public string SendDate { get; set; }
-        public string IsRead { get; set; }
+        public bool IsRead { get; set; }
     }
 }
